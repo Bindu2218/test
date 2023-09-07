@@ -5,7 +5,7 @@
 # RUN pip install -r requirements.txt
 # EXPOSE 5000
 # CMD ["python", "run.py"]
-FROM python:3.8-slim-buster
+FROM python:3.9.13-slim-bullseye
 USER root
 WORKDIR /usr/local/app
 COPY requirements.txt /usr/local/app/requirements.txt
