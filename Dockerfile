@@ -3,6 +3,5 @@ WORKDIR /usr/src/app
 COPY requirements.txt /usr/src/app/
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
-COPY /usr/src/app
 EXPOSE 5000
 CMD ["python", "run.py"]
