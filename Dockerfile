@@ -8,7 +8,7 @@
 FROM python:3.9.13-slim-bullseye
 USER root
 WORKDIR /usr/local/app
-COPY requirements.txt /usr/local/app/requirements.txt
+COPY requirements.txt /usr/local/app
 RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install gunicorn
